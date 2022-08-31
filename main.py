@@ -1,16 +1,18 @@
-# This is a sample Python script.
+print("\nWelcome to the roller-coaster!\n")
+height = int(input("\nWhat's your height in cm? "))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if height > 120:
+    print("\nPerfect, check the price!\n")
+    age = int(input("\nwhat's your age? "))
+    if age < 12:
+        print("\nPlease answer another question, and pay $5.\n")
+    elif 18 <= age:
+        print("\nPlease answer another question, and pay $8")
+    else:
+        print("\nPlease answer another question, and pay $12")
+    medical_condition = str(input("\nDo you have any medium or serious medical conditions?Y/N ").upper())
+    if medical_condition == 'Y':
+        print("\nI'm sorry, You're not allowed to ride the roller-coaster. ")
+    else:
+        print("\nHave Fun")
+else:
